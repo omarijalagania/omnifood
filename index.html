@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
@@ -14,22 +15,23 @@
         <header>
             <nav>
                 <div class="row">
-                    <img class="logo" src="resources/img/logo-white.png" alt="Omnifood Logo">
+                    <a href="/index.html"><img class="logo" src="resources/img/logo-white.png" alt="Omnifood Logo"></a>
+                    <a href="/index.html"><img class="logo-black" src="resources/img/logo.png" alt="Omnifood Logo"></a>
                     <ul class="main-nav">
-                        <li><a href="#">Food delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Our Cities</a></li>
-                        <li><a href="#">Sign Up</a></li>
+                        <li><a class="js--nav-food-delivery" href="#">Food delivery</a></li>
+                        <li><a class="js--nav-how-it-works" href="#">How it works</a></li> 
+                        <li><a class="js--nav-our-cities" href="#">Our Cities</a></li>
+                        <li><a class="js--nav-sign-up" href="#">Sign Up</a></li>
                     </ul>
                 </div>
             </nav> 
             <div class="hero-text-box">
                 <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
-                <a class="btn btn-full" href="#">I’m hungry</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <a class="btn btn-full js--scroll-to-plan" href="#">I’m hungry</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
             </div>
         </header>
-        <section class="section-features">
+        <section class="section-features js--section-features">
             <div class="row">
                 <!--Section Slogan-->
                 <h2>Get food fast &mdash; not fast food.</h2>
@@ -40,7 +42,7 @@
             </div>
             <!--Section Slogan End-->
             <!--COLUMNS-->
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">
                     <ion-icon name="infinite-outline" class="icon-big"></ion-icon>
                     <h3>Up to 365 days/year</h3>
@@ -129,7 +131,7 @@
             </div>
             <div class="row">
                 <div class="col span-1-of-2 steps-box">
-                    <img class="app-screen" src="resources/img/app-iPhone.png" alt="Iphone">
+                    <img class="app-screen js--wp-2" src="resources/img/app-iPhone.png" alt="Iphone">
                 </div>
                 <div class="col span-1-of-2 steps-box">
                     <div class="works-step">
@@ -272,7 +274,7 @@
                 <h2>Start eating healthy today</h2>
             </div>
             <div class="row">
-                <div class="col span-1-of-3">
+                <div class="col span-1-of-3 js--wp-3">
                     <div class="plan-box">
                         <div>
                             <h3>Premium</h3>
@@ -439,15 +441,11 @@
             </div>
         </footer> 
         <!--Footer END-->
-        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script> 
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="resources/js/script.js"></script>
 </body>
 </html> 
 
-<!-- 
-
-
-
-Also include links to facebook, twitter, google+ and Instagram accounts.
-
-
--->
