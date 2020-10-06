@@ -170,8 +170,19 @@ header {
 .main-nav {
     margin-top: 53px;
 }
+/* Mobile Navigation */
 
+.mobile-nav-icon {
+    display: none;
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+}
 
+.mobile-nav-icon i {
+    color: #fff;
+    font-size: 200%;
+}
 /* Sticky Navigation */
 
 .sticky {
@@ -187,11 +198,12 @@ header {
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited{
     color: #555;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .sticky .logo {
-    display: none;}
+    display: none;
+}
 
 .sticky .logo-black {
     display: block;

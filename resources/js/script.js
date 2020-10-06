@@ -52,6 +52,22 @@ $(document).ready(function(){
     $('.js--wp-3').waypoint(function(){
         $('.js--wp-3').addClass('animate__animated animate__pulse')
     },{offset: '50%'});
+
+    /* Mobile Nav Menu */
+
+    $('.js--nav--icon').click(function(){
+        var nav = $('.main-nav');
+        var icon = $('.js--nav--icon i');
+
+        nav.slideToggle(200); 
+        if (icon.hasClass('ion-md-menu')) {
+            icon.removeClass('ion-md-menu');
+            icon.addClass('ion-md-close');
+        } else {
+            icon.removeClass('ion-md-close');
+            icon.addClass('ion-md-menu');
+        }
+    });
 });  
 
-
+//ion-md-close
